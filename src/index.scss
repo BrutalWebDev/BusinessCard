@@ -1,0 +1,225 @@
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+:root {
+  --color-bg: #1f1f38;
+  --color-bg-variant: #353452;
+  --color-primary: #4db5ff;
+  --color-white: #fff;
+  --color-light: #9e9e9e;
+  --color-red: #F54C60;
+  --color-yellow: #fad15c;
+  --color-green: #99FF66;
+  --color-black: #000;
+  --color-pink: #ff6781;
+}
+html {
+  min-width: 100%;
+  min-height: 100%;
+  background: linear-gradient(to top,  var(--color-bg-variant) 5%,var(--color-bg) 40%); 
+  overflow-x: hidden;
+}
+
+body {
+  background-color: transparent;
+  color: var(--color-white) !important;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+//=============nav===============
+nav {
+  background: rgba(0, 0, 0, 0.3);
+  width: max-content;
+  display: block;
+  padding: 0.7rem 1.7rem;
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2rem;
+  display: flex;
+  gap: 0.8rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(15px);
+}
+
+nav a{
+  background: transparent;
+  padding: 0.9rem;
+  border-radius: 50%;
+  display: flex;
+  color: var(--color-light);
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  background: rgba(0, 0, 0, 0.3);
+  color:var(--color-pink)
+}
+
+nav a:active {
+  background: var(--color-bg);
+  color: var(--color-white);
+}
+
+//=============navEND===============
+
+.ctr {
+  margin-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--color-bg-variant);
+  border-radius: 1rem;
+}
+
+
+.siteUP {
+  display: flex;
+  padding-top: 3rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textLight {
+  color: var(--color-light) !important;
+}
+
+.main {
+  margin-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.siteMiddle {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  list-style-type: none; 
+  margin-bottom: 0.5rem;
+ }
+
+ .btns {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+
+ }
+
+ .btns .btn-info{
+  background-color: var(--color-red);
+  border-color: var(--color-red);
+  color: var(--color-white);
+  font-weight: bold;
+ }
+
+ .btn-info:hover {
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -o-transform: rotate(720deg);
+  -ms-transform: rotate(720deg);
+  -moz-transform: rotate(720deg);
+  -webkit-transform: rotate(720deg);
+  transform: rotate(720deg);
+  background-color: var(--color-green);
+  border-color: var(--color-green);
+  color: var(--color-black);
+ }
+
+ .btns .btn-outline-info{
+  border-color: var(--color-yellow);
+  color: var(--color-yellow);
+  font-weight: bold;
+ }
+
+ .btnsCV {
+  margin-right: 0.5rem;
+ }
+
+ .btnsCV:hover {
+  color: var(--color-white);
+  background-color: var(--color-yellow);
+ }
+
+ .me {
+  width: 100%;
+  height: 100%;
+  max-width: 350px;
+  max-height: 350px;
+  border-radius: 1rem;
+  display: block;
+  margin: 0px 5% 0px auto; 
+}
+.ctrIconses {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.ctrIconses a{
+  background: transparent;
+  border-radius: 50%;
+  display: flex;
+  color: var(--color-white);
+  font-size: 1.1rem;
+}
+
+.ctrIconses a:hover {
+  color: var(--color-yellow);
+}
+
+.ctrIconses svg{
+  margin-left: 1rem;
+}
+ 
+
+ @media screen and (max-width: 770px) {
+  .siteUP {
+    margin-bottom: -50px;
+  }
+  .me {
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 1rem;
+    display: block;
+    margin: 0px auto 0px auto;
+  }
+  .siteMiddle {
+    margin-top: 2rem;
+  }
+  .siteMiddle p{
+    margin-left: 10%;
+  }
+  .btns button{
+    margin-left: 10%;
+  }
+  .ctrIconses {
+    width: 100%;
+  }
+ }
