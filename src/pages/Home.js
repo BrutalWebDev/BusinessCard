@@ -1,5 +1,4 @@
 import React, {Fragment} from "react";
-import ME from "./img/me.jpg";
 import { BsCameraFill } from "react-icons/bs";
 import { BsCurrencyExchange } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
@@ -21,8 +20,9 @@ export const Home = () => {
                 </div>
                 <div className="row main">
                     <div className="col-md">
-                        <img src={ME} className="me" alt="me"/>
+                        <div className="me"></div>
                     </div>
+                    <div className="col-md"></div>
                     <div className="col-md siteMiddle">
                         <p><BsCurrencyExchange/>&emsp;Богатый опыт в UI/UX - дизайне</p>
                         <p><BsCameraFill/>&emsp;Люблю фотографировать</p>
@@ -34,7 +34,7 @@ export const Home = () => {
                         </div>
                         <div className="ctrIconses">
                             <a href="#"><BsInstagram size={Siconses}/></a>
-                            <a href="#"><BsGithub size={Siconses}/></a>
+                            <a href="https://github.com/BrutalWebDev" target="blank"><BsGithub size={Siconses}/></a>
                         </div>
                     </div>
                 </div>

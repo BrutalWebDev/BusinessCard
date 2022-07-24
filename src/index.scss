@@ -15,8 +15,8 @@ h1 {
 }
 
 :root {
-  --color-bg: #1f1f38;
-  --color-bg-variant: #353452;
+  --color-bg: #070712;
+  --color-bg-variant: #181818;
   --color-primary: #4db5ff;
   --color-white: #fff;
   --color-light: #9e9e9e;
@@ -83,7 +83,11 @@ nav a:active {
   margin-top: 4rem;
   margin-left: auto;
   margin-right: auto;
-  background-color: var(--color-bg-variant);
+  width: 100%;
+  height: 850px;
+  background-image: url(./pages/img/3Q4A2090.jpg);
+  background-size: cover;
+  //background-color: var(--color-bg-variant);
   border-radius: 1rem;
 }
 
@@ -102,6 +106,7 @@ nav a:active {
 .main {
   margin-top: 4rem;
   padding-bottom: 2rem;
+  height: auto;
 }
 
 .siteMiddle {
@@ -109,6 +114,7 @@ nav a:active {
   height: 100%;
   display: flex;
   flex-direction: column;
+  margin-top: 300px;
 }
 
 li {
@@ -166,10 +172,10 @@ li {
   width: 100%;
   height: 100%;
   max-width: 350px;
-  max-height: 350px;
+  max-height: 525px;
   border-radius: 1rem;
   display: block;
-  margin: 0px 5% 0px auto; 
+  margin: 0px auto 0px auto; 
 }
 .ctrIconses {
   display: flex;
@@ -195,31 +201,3 @@ li {
 .ctrIconses svg{
   margin-left: 1rem;
 }
- 
-
- @media screen and (max-width: 770px) {
-  .siteUP {
-    margin-bottom: -50px;
-  }
-  .me {
-    width: 100%;
-    height: 100%;
-    max-width: 250px;
-    max-height: 250px;
-    border-radius: 1rem;
-    display: block;
-    margin: 0px auto 0px auto;
-  }
-  .siteMiddle {
-    margin-top: 2rem;
-  }
-  .siteMiddle p{
-    margin-left: 10%;
-  }
-  .btns button{
-    margin-left: 10%;
-  }
-  .ctrIconses {
-    width: 100%;
-  }
- }
